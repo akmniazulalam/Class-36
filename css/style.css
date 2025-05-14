@@ -29,7 +29,7 @@ body{
     background: linear-gradient(to bottom, #24469A, #2FA7B5);
     padding: 50px 100px 35px;
 }
-#reviewHeading{
+.reviewHeading{
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 38px;

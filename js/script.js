@@ -1,12 +1,21 @@
-let reviewHeading = document.getElementById("reviewHeading")
+let reviewHeading = document.createElement("h3")
 let reviewInput = document.getElementById("reviewInput")
 let submitBtn = document.getElementById("submitBtn")
 let resetBtn = document.getElementById("resetBtn")
-let next = document.getElementById("next")
 let review = document.querySelector(".review")
 let reviewTwo = document.querySelector(".reviewTwo")
-let originalText =reviewHeading.innerHTML
+let buttons = document.querySelector(".buttons")
+let next = document.createElement("button")
 
+next.innerHTML = "Next Page"
+next.id = "next"
+buttons.appendChild(next)
+
+reviewHeading.innerHTML = "Your Review:"
+reviewHeading.classList.add("reviewHeading")
+review.insertBefore(reviewHeading, review.firstChild)
+
+let originalText = reviewHeading.innerHTML
 
 submitBtn.addEventListener("click", () => {
     if (reviewInput.value == "") {
