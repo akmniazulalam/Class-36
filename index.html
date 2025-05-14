@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class #36</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="review">
+        <p id="reviewHeading">Your Review:</p>
+        <textarea
+          id="reviewInput"
+          placeholder="Type Your Review..."
+          rows="4"
+        ></textarea>
+        <div class="buttons">
+          <button type="submit" id="submitBtn">Submit</button>
+          <button type="reset" id="resetBtn">Reset</button>
+          <button type="submit" id="next">Next Page</button>
+        </div>
+      </div>
+      <div class="reviewTwo">
+        <h4 id="paragraph">Title: Hello MERN 2407</h4>
+        <input
+          type="text"
+          placeholder="Please Type ‘Delete’ To  Delete"
+          id="inputDlt"
+        />
+        <div class="buttons">
+          <button id="deleteBtn" disabled>Delete</button>
+          <button id="previous">Previous</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
