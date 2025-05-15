@@ -7,6 +7,7 @@ let reviewTwo = document.querySelector(".reviewTwo")
 let buttons = document.querySelector(".buttons")
 let next = document.createElement("button")
 
+
 next.innerHTML = "Next Page"
 next.id = "next"
 buttons.appendChild(next)
@@ -14,6 +15,9 @@ buttons.appendChild(next)
 reviewHeading.innerHTML = "Your Review:"
 reviewHeading.classList.add("reviewHeading")
 review.insertBefore(reviewHeading, review.firstChild)
+
+let reviewList = document.createElement("div")
+review.insertBefore(reviewList, review.children[1])
 
 let originalText = reviewHeading.innerHTML
 
@@ -23,7 +27,12 @@ submitBtn.addEventListener("click", () => {
        return;
     }
     else {
-        reviewHeading.innerHTML = `${reviewHeading.innerHTML} <br>  ${reviewInput.value}`
+        let reviewBox = document.createElement("div")
+        reviewBox.innerHTML = `${reviewInput.value} <br>`
+        reviewBox.id = "reviewBox"
+        // reviewHeading.innerHTML = `${reviewHeading.innerHTML} <br>  ${reviewInput.value}`
+        reviewList.appendChild(reviewBox)
+        
         reviewInput.value = ""
     }
 })
@@ -31,6 +40,7 @@ submitBtn.addEventListener("click", () => {
 resetBtn.addEventListener("click", () => {
     setTimeout(() => {
         reviewHeading.innerHTML = `${originalText}`
+        reviewList.innerHTML = "";
     }, 300)
 })
 

@@ -20,7 +20,7 @@ body{
     position: relative;
 }
 .review{
-    width: 650px;
+    width: 760px;
     border-radius: 25px;
     position: absolute;
     top: 50%;
@@ -41,7 +41,7 @@ body{
     border-radius: 18px;
     background: #84a1bb;
     width: 100%;
-    padding: 40px 25px;
+    padding: 30px 25px;
     resize: none;
     border: none;
     margin-top: 30px;
@@ -98,7 +98,16 @@ body{
     cursor: pointer;
     background: #000;
 }
-
+#reviewBox{
+    margin-top: 20px;
+    padding: 20px 25px;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 117, 140, 0.4);
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: white;
+}
 
 
 .reviewTwo{
@@ -157,3 +166,9 @@ body{
     padding: 20px 40px;
     cursor: pointer;
 }
+
+
+
+
+
+
