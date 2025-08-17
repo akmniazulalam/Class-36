@@ -133,10 +133,10 @@ body{
    margin-bottom: 30px;
    width: 650px;
    font-family: "Inter", sans-serif;
-    font-weight: 300;
-    font-size: 26px;
-    color: #fff;
-    display: block;
+   font-weight: 300;
+   font-size: 26px;
+   color: #fff;
+   display: block;
 }
 #inputDlt::placeholder{
     font-family: "Inter", sans-serif;
